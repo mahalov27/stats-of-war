@@ -1,0 +1,18 @@
+{
+    "title": {
+        "ua": "Ой, скоїлась якась прикра несподіванка!",
+        "en": "Oops, some unpleasant surprise happened!"
+    },
+    "description_one_part_one": {
+        "ua": "*Скоріш за все друже ти обрав дату яка припадає до 25-02-2022 або після ",
+        "en": "*Most likely, my friend, you chose a date that falls before 25-02-2022 or after "
+    },
+    "description_one_part_two": {
+        "ua": ". Просто cпробуй обрати іншу дату.",
+        "en": ". Just try to choose another date."
+    },
+    "description_two": {
+        "ua": "**Також можлива несподіванка яка не залежать від мене, так що спробуй ще раз зараз, або пізніше.",
+        "en": "**Also a surprise is possible that is beyond my control, so try again now or later."
+    }
+}

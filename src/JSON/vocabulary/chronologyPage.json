@@ -1,0 +1,30 @@
+{
+    "title": {
+        "ua":"Хронологія втрат ворога",
+        "en":"Chronology of enemy losses"
+    },
+    "date": {
+        "ua": "-й день",
+        "en": " day"
+    },
+    "personnel_units": {
+        "ua": "Особовий склад",
+        "en": "Personnel units"
+    },
+    "technology_in_general": {
+        "ua": "Особовий склад",
+        "en": "Technology in general"
+    },
+    "link_to_data_mod": {
+        "ua": "Посилання на дані МО",
+        "en": "Link to MOD data"
+    },
+    "btn_datails": {
+        "ua": "Детальніше...",
+        "en": "Read more..."
+    },
+    "btn_more": {
+        "ua": "Більше крові",
+        "en": "More"
+    }
+}

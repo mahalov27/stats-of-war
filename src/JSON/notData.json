@@ -1,0 +1,18 @@
+{
+    "stats": {
+        "personnel_units": "зачекай",
+        "tanks": "зачекай",
+        "armoured_fighting_vehicles": "зачекай",
+        "special_military_equip": "зачекай",
+        "vehicles_fuel_tanks": "зачекай",
+        "mlrs": "зачекай",
+        "artillery_systems": "зачекай",
+        "atgm_srbm_systems": "зачекай",
+        "aa_warfare_systems": "зачекай",
+        "cruise_missiles": "зачекай",
+        "helicopters": "зачекай",
+        "planes": "зачекай",
+        "uav_systems": "зачекай",
+        "warships_cutters": "зачекай"
+    }
+}

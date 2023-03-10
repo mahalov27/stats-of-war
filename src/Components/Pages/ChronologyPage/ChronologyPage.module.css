@@ -1,0 +1,17 @@
+.block{
+    display: block;
+    max-width: 1390px;
+    margin: 0 auto;
+    padding: 10px 0px; 
+}
+.blockTitle {
+    text-align: center;
+    margin-bottom: 5px;
+    color:var(--color-grey);
+}
+
+@media(max-width: 755px){
+    .blockTitle{
+        font-size: 20px;
+    }
+}

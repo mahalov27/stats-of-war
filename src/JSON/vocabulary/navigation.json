@@ -1,0 +1,14 @@
+{
+    "nav_btn_today": {
+        "ua": "На сьогодні",
+        "en": "Today"
+    },
+    "nav_btn_certain_date": {
+        "ua": "На певну дату",
+        "en": "Certain date"
+    },
+    "nav_btn_chronology": {
+        "ua": "Хронологія",
+        "en": "Chronology"
+    }
+}

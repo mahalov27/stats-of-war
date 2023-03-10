@@ -1,0 +1,119 @@
+.navBlock{
+    position: absolute;
+    height: 100%;
+    width: 315px;
+    top: 0;
+    right: 0%;
+    transform: translateX(100%);
+    transition: var(--transition);
+    z-index: 1;
+}
+.navBlockActive{
+    transform: translateX(0)
+}
+
+/* button */
+
+.btn{
+    position: relative;
+    top: 0;
+    right: 64px;
+    height: 50px;
+    width: 65px;
+    border-radius: 50px 0px 0px 50px ;
+    background: rgb(153, 153, 153);
+    cursor: pointer;
+}
+.btn:hover{
+    background: linear-gradient(90deg, var(--color-hover) 30%, rgba(153,153,153) 90%);
+}
+.btnElem,
+.btnElem::before,
+.btnElem::after{
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.4s;
+}
+.btnElem{
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.btnElem::before{
+    content: '';
+    top: 10px
+}
+.btnElem::after{
+    content: '';
+    top: -10px
+}
+.btnElemActive::before,
+.btnElemActive::after{
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+}
+.btnElemActive{
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.btnElemActive::before{
+    content: '';
+    rotate: -45deg;
+    top: 7px;
+    right: -3px;
+}
+.btnElemActive::after{
+    content: '';
+    top: -7px;
+    rotate: 45deg;
+    right: -3px;
+}
+
+/* Navigation */
+
+.nav{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    padding-top: 32vh;
+    padding-bottom: 32vh;
+    background: rgb(153, 153, 153);
+}
+.navList{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    
+}
+.navLink{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.navLink:global(.active) {
+    color: #ff0000;
+    opacity: 0.8;
+}
+
+@media (max-width: 1200px) {
+    .navBlock {
+        width: 40%;
+    }
+}
+
+@media (max-width: 755px) {
+    .navBlock {
+        width: 60%;
+    }
+}

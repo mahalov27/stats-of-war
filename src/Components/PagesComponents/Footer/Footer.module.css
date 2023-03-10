@@ -1,0 +1,24 @@
+.footer{
+    height: 77px;
+    width: 100%;
+    padding: 0 10px;
+}
+.updBlock{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20px;
+    padding: 0 10px;
+}
+.updText{
+    color: var(--color-grey);
+    font-size: 12px;
+}
+.updLink{
+    margin-left: 5px;
+    color: var(--color-grey);
+    transition: var(--transition);
+}
+.updLink:hover{
+    color: var(--color-hover);
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "id": "01",
+        "name": {
+            "ua": "Фонд «Повернись живим»",
+            "en": "«Come Back Alive» Foundation"
+        },
+        "link": "https://savelife.in.ua/donate/#donate-army-card-monthly/",
+        "poster": "./images/Come_Back_Alive_logo.png",
+        "status": "fund"
+    },
+    {
+        "id": "02",
+        "name": {
+            "ua": "Фонд Razom for Ukraine",
+            "en": "Razom for Ukraine Foundation"
+        },
+        "link": "https://www.razomforukraine.org/ua/homeua/",
+        "poster": "https://www.razomforukraine.org/wp-content/themes/heartfelt/img/razom_logo_2.png",
+        "status": "fund"
+    },
+    {
+        "id": "03",
+        "name": {
+            "ua": "Фонд оперативної допомоги KOLO",
+            "en": "KOLO operational aid fund"
+        },
+        "link": "https://www.koloua.com/",
+        "poster": "https://uploads-ssl.webflow.com/622a2d6e1e19abb3e5f09c0f/624d9bdeafe08c2a4f3a4f8f_og_image.png",
+        "status": "fund"
+    },
+    {
+        "id": "04",
+        "name": {
+            "ua": "Фонд Армія SOS",
+            "en": "Army SOS Foundation"
+        },
+        "link": "https://armysos.com.ua/uk/vnesok/",
+        "poster": "https://armysos.com.ua/wp-content/uploads/2022/03/C-Logo-UA.svg",
+        "status": "fund"
+    },
+    {
+        "id": "05",
+        "name": {
+            "ua": "Благодійний фонд «ВЕБСПАРК»",
+            "en": "«WEBSPARK» Charitable Foundation"
+        },
+        "link": "https://www.webspark.ua/support/",
+        "poster": "https://company-logo-frankfurt.rabota.ua/cdn-cgi/image/w=250/5131454_20210714133440.png",
+        "status": "fund"
+    },
+    {
+        "id": "06",
+        "name": {
+            "ua": "Благодійний Фонд Сергія Притули",
+            "en": "Serhiy Prytula Charitable Foundation"
+        },
+        "link": "https://prytulafoundation.org/",
+        "poster": "https://pritula-strapi.s3.eu-central-1.amazonaws.com/Logo_eca0d6894c.svg",
+        "status": "fund"
+    }
+]

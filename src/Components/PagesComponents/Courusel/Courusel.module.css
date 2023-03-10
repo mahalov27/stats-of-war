@@ -1,0 +1,33 @@
+.list{
+    display: flex;
+    width: 300px;
+    height: 57px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.linkItem{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+.img{
+    height: 57px;
+    background: #fff;
+    border-radius: 3px;
+}
+.text{
+    color: var(--color-grey);
+    padding: 0 10px;
+}
+@media(max-width: 755px){
+    .list{
+        height: 45px;
+        margin-bottom: 12px;
+    }
+    .img{
+        height: 45px;
+    }
+    .text{
+        font-size: 15px;
+    }
+}

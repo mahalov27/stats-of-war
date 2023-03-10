@@ -1,0 +1,14 @@
+{
+    "title": {
+        "ua": "Обери дату",
+        "en": "Choose date"
+    },
+    "search_btn": {
+        "ua": "Шукати",
+        "en": "Find"
+    },
+    "warning": {
+        "ua": "Дата не була обрана",
+        "en": "Date not collected"
+    }
+}
