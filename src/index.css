@@ -9,7 +9,7 @@
 :root{
   --color-grey: #a5a5a5;
   --color-hover: #bbbbbb;
-  --transition: 0.4s
+  --transition: 0.4s; 
 }
 ::-webkit-scrollbar{
   width: 8px;
@@ -24,11 +24,11 @@
 }
 body{
   background-color: rgb(44, 43, 43);
-  overflow-x: hidden;
+  
 }
 
 main{
-  min-height: calc(100vh - 127px)
+  min-height: calc(100vh - 127px);
 }
 
 ul{

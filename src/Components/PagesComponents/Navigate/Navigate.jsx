@@ -9,7 +9,7 @@ const Navigate = () => {
   const LanguageNow = useSelector((state) => state.myLanguage);
   const [isActive, setIsActive] = useState(false);
 
-  const toggleActive = () => {
+  const onActive = () => {
     setIsActive(!isActive);
   };
 
@@ -18,7 +18,7 @@ const Navigate = () => {
       className={styles.navBlock + " " + (isActive && styles.navBlockActive)}
     >
       <LanguageToggle />
-      <div className={styles.btn} onClick={toggleActive}>
+      <div className={styles.btn} onClick={onActive}>
         <div
           className={styles.btnElem + " " + (isActive && styles.btnElemActive)}
         ></div>
@@ -29,7 +29,7 @@ const Navigate = () => {
             <NavLink
               to="/stats-of-war"
               className={styles.navLink}
-              onClick={toggleActive}
+              onClick={onActive}
               end
             >
               {local.nav_btn_today[LanguageNow]}
@@ -39,7 +39,7 @@ const Navigate = () => {
             <NavLink
               to="choose-a-date"
               className={styles.navLink}
-              onClick={toggleActive}
+              onClick={onActive}
             >
               {local.nav_btn_certain_date[LanguageNow]}
             </NavLink>
@@ -48,7 +48,7 @@ const Navigate = () => {
             <NavLink
               to="chronology"
               className={styles.navLink}
-              onClick={toggleActive}
+              onClick={onActive}
             >
               {local.nav_btn_chronology[LanguageNow]}
             </NavLink>

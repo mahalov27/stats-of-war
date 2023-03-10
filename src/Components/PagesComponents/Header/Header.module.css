@@ -4,13 +4,15 @@
 .linkLogo{
     display: block;
     height: 50px;
-    width: 55px;
+    width: 70px;
     margin-left: 15px;
     cursor: pointer;
+    overflow: hidden;
 }
 .logo{
     object-fit: cover;
     height: 50px;
+    margin-left: 5px;
     rotate: 15deg;
     scale: 1.2;
     opacity: 0.7;

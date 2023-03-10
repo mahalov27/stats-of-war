@@ -3,6 +3,7 @@
     width: 135px;
     font-weight: 600;
     background-color: var(--color-grey);
+    color: black;
     border: none;
     border-radius: 3px;
     cursor: pointer;
