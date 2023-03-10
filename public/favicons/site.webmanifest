@@ -1,6 +1,6 @@
 {
-    "name": "Stats of war",
-    "short_name": "Stats of war",
+    "name": "stats_of_war",
+    "short_name": "stats_of_war",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
