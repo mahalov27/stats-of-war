@@ -10,6 +10,8 @@ const ListStats = ({ stats }) => {
   const language = useSelector((state) => state.myLanguage);
   const [terms, setTerms] = useState({});
 
+  console.log(terms);
+
   const listMap = [
     "personnel_units",
     "tanks",

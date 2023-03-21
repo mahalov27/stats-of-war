@@ -4,8 +4,8 @@ import styles from "./Header.module.css";
 const Header = () => {
   return (
     <div className={styles.header}>
-      <Link to="/stats-of-war" className={styles.linkLogo}>
-         <img src="images/ukraineRed.png" className={styles.logo} alt="logo"/>
+      <Link to="/" className={styles.linkLogo}>
+         <img src={process.env.PUBLIC_URL + '/images/ukraineRed.png'} className={styles.logo} alt="logo"/>
       </Link>
     </div>
   );

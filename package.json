@@ -1,7 +1,7 @@
 {
   "name": "stats_of_war",
   "version": "0.1.0",
-  "homepage": "https://mahalov27.github.io/stats-of-war",
+  "homepage": "https://mahalov27.github.io/stats-of-war/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",

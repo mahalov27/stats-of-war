@@ -10,8 +10,8 @@ const App = () => {
   return (
    <Suspense fallback={<p>Loading...</p>}>
     <Routes>
-      <Route path="/stats-of-war" element={<Layout/>}>
-        <Route index="today" element={<TodayPage/>}/>
+      <Route path="/" element={<Layout/>}>
+        <Route index element={<TodayPage/>}/>
         <Route path="chronology" element={<ChronologyPage/>}/>
         <Route path="choose-a-date" element={<ChooseDatePage/>}/>
       </Route>

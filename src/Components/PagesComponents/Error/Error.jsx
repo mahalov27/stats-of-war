@@ -11,7 +11,7 @@ const Error = () => {
       <div className={styles.blockError}>
         <div className={styles.blockImg}>
           <img
-            src="./images/nuclear_mushroom.png"
+            src={process.env.PUBLIC_URL + '/images/nuclear_mushroom.png'}
             className={styles.img}
             alt="error icon"
           />

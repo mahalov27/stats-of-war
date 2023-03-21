@@ -27,7 +27,7 @@ const Navigate = () => {
         <ul className={styles.navList}>
           <li>
             <NavLink
-              to="/stats-of-war"
+              to="/"
               className={styles.navLink}
               onClick={onActive}
               end
