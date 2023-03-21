@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stats-of-war/static/css/main.aa2c6fa2.css",
-    "main.js": "/stats-of-war/static/js/main.fca9fcf5.js",
+    "main.js": "/stats-of-war/static/js/main.0034e660.js",
     "static/css/483.b9d5a316.chunk.css": "/stats-of-war/static/css/483.b9d5a316.chunk.css",
     "static/js/483.652b815f.chunk.js": "/stats-of-war/static/js/483.652b815f.chunk.js",
     "static/css/259.d355d989.chunk.css": "/stats-of-war/static/css/259.d355d989.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/767.aa0592b1.chunk.js": "/stats-of-war/static/js/767.aa0592b1.chunk.js",
     "index.html": "/stats-of-war/index.html",
     "main.aa2c6fa2.css.map": "/stats-of-war/static/css/main.aa2c6fa2.css.map",
-    "main.fca9fcf5.js.map": "/stats-of-war/static/js/main.fca9fcf5.js.map",
+    "main.0034e660.js.map": "/stats-of-war/static/js/main.0034e660.js.map",
     "483.b9d5a316.chunk.css.map": "/stats-of-war/static/css/483.b9d5a316.chunk.css.map",
     "483.652b815f.chunk.js.map": "/stats-of-war/static/js/483.652b815f.chunk.js.map",
     "259.d355d989.chunk.css.map": "/stats-of-war/static/css/259.d355d989.chunk.css.map",
@@ -24,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.aa2c6fa2.css",
-    "static/js/main.fca9fcf5.js"
+    "static/js/main.0034e660.js"
   ]
 }
