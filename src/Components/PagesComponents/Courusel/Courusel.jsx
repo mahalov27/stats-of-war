@@ -36,7 +36,7 @@ const Courusel = () => {
             rel="noreferrer"
           >
             <img
-              src={donateList[index].poster}
+              src={process.env.PUBLIC_URL + donateList[index].poster}
               className={styles.img}
               alt={donateList[index].name.en}
             />

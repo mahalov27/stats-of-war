@@ -6,7 +6,7 @@
             "en": "«Come Back Alive» Foundation"
         },
         "link": "https://savelife.in.ua/donate/#donate-army-card-monthly/",
-        "poster": "/images/Come_Back_Alive_logo.png",
+        "poster": "/images/donateList/Come_Back_Alive_logo.png",
         "status": "fund"
     },
     {
@@ -16,7 +16,7 @@
             "en": "Razom for Ukraine Foundation"
         },
         "link": "https://www.razomforukraine.org/ua/homeua/",
-        "poster": "https://www.razomforukraine.org/wp-content/themes/heartfelt/img/razom_logo_2.png",
+        "poster": "/images/donateList/razom_logo.png",
         "status": "fund"
     },
     {
@@ -26,7 +26,7 @@
             "en": "KOLO operational aid fund"
         },
         "link": "https://www.koloua.com/",
-        "poster": "https://uploads-ssl.webflow.com/622a2d6e1e19abb3e5f09c0f/624d9bdeafe08c2a4f3a4f8f_og_image.png",
+        "poster": "/images/donateList/kolo_logo.jpg",
         "status": "fund"
     },
     {
@@ -36,7 +36,7 @@
             "en": "Army SOS Foundation"
         },
         "link": "https://armysos.com.ua/uk/vnesok/",
-        "poster": "https://armysos.com.ua/wp-content/uploads/2022/03/C-Logo-UA.svg",
+        "poster": "/images/donateList/army_sos_logo.png",
         "status": "fund"
     },
     {
@@ -46,7 +46,7 @@
             "en": "«WEBSPARK» Charitable Foundation"
         },
         "link": "https://www.webspark.ua/support/",
-        "poster": "https://company-logo-frankfurt.rabota.ua/cdn-cgi/image/w=250/5131454_20210714133440.png",
+        "poster": "/images/donateList/webspark_logo.png",
         "status": "fund"
     },
     {
@@ -56,7 +56,7 @@
             "en": "Serhiy Prytula Charitable Foundation"
         },
         "link": "https://prytulafoundation.org/",
-        "poster": "https://pritula-strapi.s3.eu-central-1.amazonaws.com/Logo_eca0d6894c.svg",
+        "poster":  "/images/donateList/prytula_logo.jpg",
         "status": "fund"
     }
 ]
