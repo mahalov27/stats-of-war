@@ -1,18 +1,60 @@
 {
     "stats": {
-        "personnel_units": "зачекай",
-        "tanks": "зачекай",
-        "armoured_fighting_vehicles": "зачекай",
-        "special_military_equip": "зачекай",
-        "vehicles_fuel_tanks": "зачекай",
-        "mlrs": "зачекай",
-        "artillery_systems": "зачекай",
-        "atgm_srbm_systems": "зачекай",
-        "aa_warfare_systems": "зачекай",
-        "cruise_missiles": "зачекай",
-        "helicopters": "зачекай",
-        "planes": "зачекай",
-        "uav_systems": "зачекай",
-        "warships_cutters": "зачекай"
+        "personnel_units": {
+            "ua": "немає даних",
+            "en": "no data"
+        },
+        "tanks": {
+            "ua": "немає даних",
+            "en": "no data"
+        },
+        "armoured_fighting_vehicles": {
+            "ua": "немає даних",
+            "en": "no data"
+        },
+        "special_military_equip": {
+            "ua": "немає даних",
+            "en": "no data"
+        },
+        "vehicles_fuel_tanks": {
+            "ua": "немає даних",
+            "en": "no data"
+        },
+        "mlrs": {
+            "ua": "немає даних",
+            "en": "no data"
+        },
+        "artillery_systems": {
+            "ua": "немає даних",
+            "en": "no data"
+        },
+        "atgm_srbm_systems": {
+            "ua": "немає даних",
+            "en": "no data"
+        },
+        "aa_warfare_systems": {
+            "ua": "немає даних",
+            "en": "no data"
+        },
+        "cruise_missiles": {
+            "ua": "немає даних",
+            "en": "no data"
+        },
+        "helicopters": {
+            "ua": "немає даних",
+            "en": "no data"
+        },
+        "planes": {
+            "ua": "немає даних",
+            "en": "no data"
+        },
+        "uav_systems": {
+            "ua": "немає даних",
+            "en": "no data"
+        },
+        "warships_cutters": {
+            "ua": "немає даних",
+            "en": "no data"
+        }
     }
 }

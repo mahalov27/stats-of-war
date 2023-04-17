@@ -3,14 +3,13 @@ import { useSelector } from "react-redux";
 import { getTerms } from "../../../services/fetch";
 import reverseDate from "../../../services/reverseDate";
 import ordinalNumerals from "../../../services/ordinalNumerals";
+import Loader from "../Loader/Loader";
 import local from "../../../JSON/vocabulary/listStats.json";
 import styles from "./ListStats.module.css";
 
 const ListStats = ({ stats }) => {
   const language = useSelector((state) => state.myLanguage);
-  const [terms, setTerms] = useState({});
-
-  console.log(terms);
+  const [terms, setTerms] = useState();
 
   const listMap = [
     "personnel_units",
@@ -35,7 +34,7 @@ const ListStats = ({ stats }) => {
     } catch {
       console.error();
     }
-  }, [stats, language]);
+  }, [language]);
 
   return (
     <>
@@ -54,11 +53,15 @@ const ListStats = ({ stats }) => {
           listMap.map((listPoint) => (
             <li key={listPoint} className={styles.listItem}>
               <div className={styles.listItemName}>
-                <img
-                  src={terms?.[listPoint]?.icon}
-                  className={styles.listItemImg}
-                  alt={terms?.[listPoint]?.title}
-                />
+                {terms ? (
+                  <img
+                    src={terms?.[listPoint]?.icon}
+                    className={styles.listItemImg}
+                    alt={terms?.[listPoint]?.title}
+                  />
+                ) : (
+                  <Loader widthWrap={"65"} size={"35"} />
+                )}
                 <p className={styles.listItemTitle}>
                   {terms?.[listPoint]?.title}
                 </p>

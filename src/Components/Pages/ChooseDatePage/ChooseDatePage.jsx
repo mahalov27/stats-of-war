@@ -9,6 +9,7 @@ import noData from "./../../../JSON/notData.json";
 import local from "../../../JSON/vocabulary/chooseDatePage.json";
 import getFomatedDate from "../../../services/getFormatedDate";
 import styles from "./ChooseDatePage.module.css";
+import Loader from "../../PagesComponents/Loader/Loader";
 
 const ChooseDatePage = () => {
   const language = useSelector((state) => state.myLanguage);

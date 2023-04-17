@@ -14,7 +14,6 @@ export const getTodayStatistic = (date) => {
 };
 
 export const getTerms = (lang = "ua") => {
-  console.log(lang);
   return axios
     .get(`https://russianwarship.rip/api/v2/terms/${lang}`)
     .then((data) => data.data.data);
