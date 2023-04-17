@@ -39,7 +39,7 @@ const ChronologyPage = () => {
     <div className={styles.block}>
       <h2 className={styles.blockTitle}>{local.title[language]}</h2>
       {statistic.length > 0 ? <ChronologyList array={statistic} funcMore={handlePagination} funcModale={handleModale}/> : <Loader size={'40'} heightWrap={'150'} />}
-      {isActiveModale && <ModalView func={handleModale} props={date}/>}
+      {isActiveModale && <ModalView func={handleModale} dateProp={date}/>}
     </div>
   );
 };

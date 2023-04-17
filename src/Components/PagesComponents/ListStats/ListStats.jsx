@@ -1,15 +1,19 @@
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import { getTerms } from "../../../services/fetch";
+import { getTerms, getTodayStatistic } from "../../../services/fetch";
 import reverseDate from "../../../services/reverseDate";
+import getFomatedDate from "../../../services/getFormatedDate";
 import ordinalNumerals from "../../../services/ordinalNumerals";
 import Loader from "../Loader/Loader";
 import local from "../../../JSON/vocabulary/listStats.json";
 import styles from "./ListStats.module.css";
+import Message from "../Message/Message";
 
-const ListStats = ({ stats }) => {
+const ListStats = ({ dateProp, statsProp }) => {
   const language = useSelector((state) => state.myLanguage);
   const [terms, setTerms] = useState();
+  const [stats, setStats] = useState();
+  const [message, setMessage] = useState(false)
 
   const listMap = [
     "personnel_units",
@@ -29,12 +33,24 @@ const ListStats = ({ stats }) => {
   ];
 
   useEffect(() => {
-    try {
+    if(statsProp){
+      setStats(statsProp)
       getTerms(language).then((data) => setTerms(data));
-    } catch {
-      console.error();
+    }else{
+      try {
+        getTodayStatistic(dateProp)
+        .then(data => setStats(data))
+        .catch(err => {
+          if(getFomatedDate(new Date()) === getFomatedDate(dateProp)){
+            setMessage(true)
+          }
+        })
+        getTerms(language).then((data) => setTerms(data));
+      } catch {
+        console.error();
+      }
     }
-  }, [language]);
+  }, [dateProp, statsProp, language]);
 
   return (
     <>
@@ -49,7 +65,7 @@ const ListStats = ({ stats }) => {
         </p>
       </div>
       <ul className={styles.list}>
-        {stats &&
+        {
           listMap.map((listPoint) => (
             <li key={listPoint} className={styles.listItem}>
               <div className={styles.listItemName}>
@@ -67,17 +83,18 @@ const ListStats = ({ stats }) => {
                 </p>
               </div>
               <div>
-                <p className={styles.listItemStats}>
+                {stats && <p className={styles.listItemStats}>
                   {stats?.stats?.[listPoint]}{" "}
                   <span className={styles.statsSub}>
                     (+
                     {stats?.increase?.[listPoint]})
                   </span>
-                </p>
+                </p>}
               </div>
             </li>
           ))}
       </ul>
+      {message && <Message />}
     </>
   );
 };

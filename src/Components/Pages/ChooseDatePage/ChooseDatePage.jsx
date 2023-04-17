@@ -5,18 +5,17 @@ import MyCalendar from "../../PagesComponents/MyCalendar/MyCalendar";
 import ListStats from "../../PagesComponents/ListStats/ListStats";
 import Button from "../../PagesComponents/Button/Button";
 import Error from "../../PagesComponents/Error/Error";
-import noData from "./../../../JSON/notData.json";
+import Loader from "../../PagesComponents/Loader/Loader";
 import local from "../../../JSON/vocabulary/chooseDatePage.json";
 import getFomatedDate from "../../../services/getFormatedDate";
 import styles from "./ChooseDatePage.module.css";
-import Loader from "../../PagesComponents/Loader/Loader";
 
 const ChooseDatePage = () => {
-  const language = useSelector((state) => state.myLanguage);
   const [date, setDate] = useState("");
   const [statistic, setStatistic] = useState(null);
   const [isCalendar, setIsCalendar] = useState(true);
   const [isError, setIsError] = useState(false);
+  const language = useSelector((state) => state.myLanguage);
 
   const getDate = () => {
     try {
@@ -26,9 +25,7 @@ const ChooseDatePage = () => {
         })
         .catch((err) => {
           if (!statistic) {
-            if (getFomatedDate(new Date()) === getFomatedDate(date)) {
-              setStatistic(noData);
-            } else {
+            if (getFomatedDate(new Date()) !== getFomatedDate(date)) {
               setIsError(true);
             }
           }
@@ -52,10 +49,14 @@ const ChooseDatePage = () => {
       {isCalendar && <MyCalendar func={getDate} state={setDate} date={date} />}
       {!isCalendar && (
         <div className={styles.btn}>
-          <Button name={local.another_date_btn[language]} func={HandleBackToCalendar} />
+          <Button
+            name={local.another_date_btn[language]}
+            func={HandleBackToCalendar}
+          />
         </div>
       )}
-      {!isError && statistic && <ListStats stats={statistic} />}
+      {!isError && !isCalendar && !statistic && <Loader />}
+      {!isError && statistic && <ListStats statsProp={statistic} dateProp={date}/>}
       {isError && <Error />}
     </>
   );
