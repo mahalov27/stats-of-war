@@ -10,7 +10,9 @@ const Navigate = () => {
   const [isActive, setIsActive] = useState(false);
 
   const onActive = () => {
+    const body = document.querySelector('body');
     setIsActive(!isActive);
+    body.classList.toggle("desableScroll")
   };
 
   return (

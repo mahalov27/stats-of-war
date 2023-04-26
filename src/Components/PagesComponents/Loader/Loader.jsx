@@ -16,6 +16,7 @@ const Loader = (props) => {
         alignItems: position ? position : "center",
         height: heightWrap ? heightWrap + "px" : "100vh",
         width: widthWrap ? widthWrap + "px" : "100%",
+        pointerEvents: "none",
       }}
       wrapperClass=""
       visible={true}

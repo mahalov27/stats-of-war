@@ -33,6 +33,7 @@ const ListStats = ({ dateProp, statsProp }) => {
   ];
 
   useEffect(() => {
+    setMessage(false)
     if(statsProp){
       setStats(statsProp)
       getTerms(language).then((data) => setTerms(data));
