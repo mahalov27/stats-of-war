@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import { getTodayStatistic } from "../../../services/fetch";
-import MyCalendar from "../../PagesComponents/MyCalendar/MyCalendar";
-import ListStats from "../../PagesComponents/ListStats/ListStats";
-import Button from "../../PagesComponents/Button/Button";
-import Error from "../../PagesComponents/Error/Error";
-import Loader from "../../PagesComponents/Loader/Loader";
-import local from "../../../JSON/vocabulary/chooseDatePage.json";
-import getFomatedDate from "../../../services/getFormatedDate";
+import { getTodayStatistic } from "../../../src/services/fetch";
+import MyCalendar from "../../components/MyCalendar/MyCalendar";
+import ListStats from "../../components/ListStats/ListStats";
+import Button from "../../components/Button/Button";
+import Error from "../../components/Error/Error";
+import Loader from "../../components/Loader/Loader";
+import Message from "../../components/Message/Message";
+import local from "../../../src/jsons/vocabulary/chooseDatePage.json";
+import getFomatedDate from "../../../src/utils/getFormatedDate";
 import styles from "./ChooseDatePage.module.css";
-import Message from "../../PagesComponents/Message/Message";
 
 const ChooseDatePage = () => {
   const [date, setDate] = useState("");

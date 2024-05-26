@@ -1,18 +1,17 @@
 import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
-import Header from "../PagesComponents/Header/Header";
-import Navigate from "../PagesComponents/Navigate/Navigate";
-import Loader from "../PagesComponents/Loader/Loader";
-import Footer from "../PagesComponents/Footer/Footer";
+import Header from "../Header/Header";
+import Navigate from "../Navigate/Navigate";
+import Loader from "../Loader/Loader";
+import Footer from "../Footer/Footer";
 
 const Layout = () => {
-
   return (
     <div>
       <Header />
       <Navigate />
       <main>
-        <Suspense fallback={<Loader/>}>
+        <Suspense fallback={<Loader />}>
           <Outlet />
         </Suspense>
       </main>

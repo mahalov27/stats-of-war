@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ListStats from "../../PagesComponents/ListStats/ListStats";
+import ListStats from "../../components/ListStats/ListStats";
 
 const TodayPage = () => {
   const [date, setDate] = useState('')

@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { setLanguage } from "../../../redux/language/languageSlice";
+import { setLanguage } from "../../redux/language/languageSlice";
 import styles from "./LanguageToggle.module.css";
 
 const LanguageToggle = () => {

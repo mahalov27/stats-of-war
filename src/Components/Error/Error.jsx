@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
-import getFomatedDate from "../../../services/getFormatedDate";
-import reverseDate from "../../../services/reverseDate";
-import local from "../../../JSON/vocabulary/error.json";
+import getFomatedDate from "../../utils/getFormatedDate";
+import reverseDate from "../../utils/reverseDate";
+import local from "../../jsons/vocabulary/error.json";
 import styles from "./Error.module.css";
 
 const Error = () => {

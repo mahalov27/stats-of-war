@@ -1,10 +1,10 @@
-import Courusel from "./../Courusel/Courusel"
+import Courusel from "../Courusel/Courusel";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <Courusel/>
+      <Courusel />
       <div className={styles.updBlock}>
         <p className={styles.updText}>
           API:
@@ -18,15 +18,15 @@ const Footer = () => {
           </a>
         </p>
         <p className={styles.updText}>
-        <a
+          <a
             className={styles.updLink}
             href="https://github.com/mahalov27"
             target="_blank"
             rel="noreferrer"
           >
             App by Makhalov Maksym
-            </a>
-            </p>
+          </a>
+        </p>
       </div>
     </div>
   );

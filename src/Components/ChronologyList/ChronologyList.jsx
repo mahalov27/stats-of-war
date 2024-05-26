@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
-import reverseDate from "../../../services/reverseDate";
-import ordinalNumerals from "../../../services/ordinalNumerals"
+import reverseDate from "../../utils/reverseDate";
+import ordinalNumerals from "../../utils/ordinalNumerals"
 import Button from "../Button/Button"
-import local from "../../../JSON/vocabulary/chronologyPage.json"
+import local from "../../jsons/vocabulary/chronologyPage.json"
 import styles from "./ChronologyList.module.css";
 
 

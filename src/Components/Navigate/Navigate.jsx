@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
-import local from "../../../JSON/vocabulary/navigation.json";
+import local from "../../jsons/vocabulary/navigation.json";
 import LanguageToggle from "../LanguageToggle/LanguageToggle";
 import styles from "./Navigate.module.css";
 
@@ -10,9 +10,9 @@ const Navigate = () => {
   const [isActive, setIsActive] = useState(false);
 
   const onActive = () => {
-    const body = document.querySelector('body');
+    const body = document.querySelector("body");
     setIsActive(!isActive);
-    body.classList.toggle("desableScroll")
+    body.classList.toggle("desableScroll");
   };
 
   return (
@@ -28,12 +28,7 @@ const Navigate = () => {
       <div className={styles.nav}>
         <ul className={styles.navList}>
           <li>
-            <NavLink
-              to="/"
-              className={styles.navLink}
-              onClick={onActive}
-              end
-            >
+            <NavLink to="/" className={styles.navLink} onClick={onActive} end>
               {local.nav_btn_today[LanguageNow]}
             </NavLink>
           </li>

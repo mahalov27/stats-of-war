@@ -2,7 +2,7 @@ import { useState } from "react";
 import Calendar from "react-calendar";
 import { useSelector } from "react-redux";
 import Button from "../Button/Button";
-import local from "../../../JSON/vocabulary/myCalendar.json"
+import local from "../../jsons/vocabulary/myCalendar.json"
 import "react-calendar/dist/Calendar.css";
 import styles from "./MyCalendar.module.css";
 

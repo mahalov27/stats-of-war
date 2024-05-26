@@ -1,5 +1,5 @@
 import axios from "axios";
-import getFomatedDate from "./getFormatedDate";
+import getFomatedDate from "../utils/getFormatedDate";
 
 export const getWarInfo = () => {
   return axios

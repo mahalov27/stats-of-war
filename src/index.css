@@ -28,7 +28,7 @@ body{
 }
 
 main{
-  min-height: calc(100vh - 127px);
+  min-height: calc(100dvh - 127px);
 }
 
 ul{

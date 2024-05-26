@@ -1,22 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSelector } from "react-redux";
-import donateList from "./../../../JSON/donateList.json";
+import donateList from "./../../jsons/donateList.json";
 import styles from "./Courusel.module.css";
 
 const Courusel = () => {
   const language = useSelector((state) => state.myLanguage)
   const [index, setIndex] = useState(0);
 
+  const nextIndex = useCallback(() => {
+    index < donateList.length - 1 && setIndex(index + 1);
+    index === donateList.length - 1 && setIndex(0);
+  }, [index]);
 
   useEffect(() => {
     setTimeout(nextIndex, 5000);
-  }, [index]);
-
-  const nextIndex = () => {
-    index < donateList.length - 1 && setIndex(index + 1);
-    index === donateList.length - 1 && setIndex(0);
-  };
+  }, [index, nextIndex]);
 
   return (
     <div className={styles.list}>

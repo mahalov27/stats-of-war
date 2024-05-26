@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import { getTerms, getTodayStatistic } from "../../../services/fetch";
-import reverseDate from "../../../services/reverseDate";
-import getFomatedDate from "../../../services/getFormatedDate";
-import ordinalNumerals from "../../../services/ordinalNumerals";
+import { getTerms, getTodayStatistic } from "../../services/fetch";
+import reverseDate from "../../utils/reverseDate";
+import getFomatedDate from "../../utils/getFormatedDate";
+import ordinalNumerals from "../../utils/ordinalNumerals";
 import Loader from "../Loader/Loader";
-import local from "../../../JSON/vocabulary/listStats.json";
-import styles from "./ListStats.module.css";
 import Message from "../Message/Message";
+import local from "../../jsons/vocabulary/listStats.json";
+import styles from "./ListStats.module.css";
 
 const ListStats = ({ dateProp, statsProp }) => {
   const language = useSelector((state) => state.myLanguage);
